@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * 
+ */
+function bb_menu_menu_link($variables) {
+
+  exit('hier se');
+
+  // check for path
+/*
+  $current_path = $_SERVER['REQUEST_URI'];
+  exit($current_path);
+
+*/
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "BLA</li>\n";
+}

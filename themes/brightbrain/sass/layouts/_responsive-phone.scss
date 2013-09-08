@@ -1,0 +1,291 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+@media all and (max-width: 319px) {
+
+  #header {
+    padding: 0;
+  }
+
+  #navigation a#responsive-main-menu {
+      display: block;
+      background: url(../images/bg-responsive-menu.png) no-repeat center right;
+  }
+
+  #navigation .block-menu {
+    height: 40px;
+    line-height: 40px;
+    ul {
+      text-align: left;
+      li {
+        display: block;
+      }
+    }
+  }
+
+  // hide the highlighted stuff
+  .region-highlighted {
+    display: none;
+  }
+
+  #main {
+    .block-960 {
+	    margin-top: 20px;
+	    h1 {
+	      font-size: 2em;
+	      border: none;
+	      margin-bottom: 30px;
+	    }
+    }
+  }
+  
+  #main {
+    .block-wat-doen-we-hr {
+      ul {
+        li {
+          width: 100%;
+          float: none;
+          position: relative;
+        }
+      }
+    }
+  }
+  
+}
+
+@media all and (min-width: 320px) and (max-width: 479px) {
+
+  #header {
+    padding: 0;
+  }
+
+  #navigation a#responsive-main-menu {
+      display: block;
+      background: url(../images/bg-responsive-menu.png) no-repeat center right;
+  }
+
+  #navigation .block-menu {
+    height: 40px;
+    line-height: 40px;
+    ul {
+      text-align: left;
+      li {
+        display: block;
+      }
+    }
+  }
+  
+  // hide the highlighted stuff
+  .region-highlighted {
+    display: none;
+  }
+  
+  #main {
+    .block-960 {
+	    margin-top: 20px;
+	    h1 {
+	      font-size: 2em;
+	      border: none;
+	      margin-bottom: 30px;
+	    }
+    }
+  }
+  
+  #main {
+    .block-wat-doen-we-hr {
+      ul {
+        li {
+          width: 100%;
+          float: none;
+          position: relative;
+        }
+      }
+    }
+  }
+
+	#main {
+	  .block-wie-zijn-we-hr {
+	    .view-header {
+	      p {
+	        font-size: 1.75em;
+	      }
+	    }
+	    ul {
+	      margin: 0;
+	      padding: 0;
+	      li {
+	        width: 100%;
+	        float: none;
+	        .photo {
+	          width: 100%;
+	          text-align: center;
+	        }
+	      }
+	    }
+	    .view-footer {
+	      a.more-button {
+	        display: block;
+	        padding: 10px 0;
+	        width: 100%;
+	      }
+	    }
+	    
+	  }
+	}
+	
+	#main {
+	  .block-ons-werk {
+			.view-footer {
+				a.more-button {
+					display: block;
+					padding: 10px 0;
+					width: 100%;
+				}
+			}
+	  }
+	}
+	
+  #main {
+    .header-block {
+      margin-top: 0;
+      height: auto;
+      .visual {
+        display: none;
+      }
+      .text {
+        color: #3a3a3a;
+        .slogan {
+          background: none;
+        }
+      }
+    }
+  }
+	
+	#main {
+	  .field-name-field-page-block {
+	    h1 {
+	      font-size: 2em !important;
+	      line-height: 1.2em !important;
+	      border: none !important;
+	      text-align: left !important;
+	      span {
+	        padding: 0 !important;
+	      }
+	    }
+	    .highlight {
+	      margin-left: 0;
+	      margin-right: 0;
+	      padding-left: 10px;
+	      padding-right: 10px;
+	    }
+	    .field-name-field-page-block-body {
+	      img {
+	        display: none !important;
+	      }
+		    .block-col6 {
+		      width: 100%;
+		      float: none;
+		      margin-right: 0;
+		      margin-bottom: 20px;
+		      padding: 0;
+		    }
+	      .block-col12 {
+	        width: 100%;
+	        float: none;
+	        margin-right: 0;
+	        padding: 0;
+	        margin-bottom: 20px;
+	      }
+	      .left {
+	        p {
+	          text-align: left;
+	          margin-bottom: 20px;
+	        }
+	      }
+	      .right {
+	        p {
+	          text-align: left;
+	          margin-bottom: 20px;
+	        }
+	      }
+	    }
+	  }
+  }
+
+  .webform-client-form {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    fieldset {
+      &#webform-component-wrapper--wrapper-left {
+        width: 95% !important;
+        float: none;
+        .form-text {
+        }
+      }
+      &#webform-component-wrapper--wrapper-right {
+        display: none;
+      }
+    }
+    #edit-actions {
+      margin-top: 0 !important;
+      padding-bottom: 20px !important;
+    }
+  }
+
+	#main {
+	  .block-main-referenties {
+	    ul.referenties {
+	      li.referentie {
+          width: 100%;
+          border-bottom: 2px solid #cacaca;
+          padding-bottom: 10px;
+	      }
+	    }
+	  }
+	}
+	
+	#main {
+	  article.node-referentie {
+	    margin-top: 10px;
+      .referentie-top {
+        .item-list {
+          ul {
+            margin-top: 10px;
+            li {
+              float: right;
+            }
+          }
+        }      
+      }
+      .referentie-tags {
+        text-align: center;
+        span.tag {
+          display: block;
+          padding: 0;
+        }
+        span.separator {
+          display: none;
+        }
+      }
+	  }
+	}
+
+  
+  #footer {
+    font-size: 0.75em;
+    .contact {
+      div {
+        padding-left: 35px;
+      }
+    }
+  }
+}

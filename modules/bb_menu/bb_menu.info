@@ -1,5 +1,0 @@
-name        = BrightBrain Menu
-description = Alters main menu
-core        = 7.x
-version     = 7.x-1.0
-package     = BrightBrain

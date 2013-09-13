@@ -31,9 +31,9 @@ Drupal.behaviors.debug = {
   }
 }
 
-Drupal.behaviors.hrBlocks = {
+Drupal.behaviors.frontBlocks = {
   attach: function(context, settings) {
-    var block = $('.block-wat-doen-we-hr ul li');
+    var block = $('.block-wat-doen-we ul li');
     block.hover(function() {
       $(this).find('.title').fadeOut();
       $(this).find('.sub').fadeIn();
@@ -44,9 +44,9 @@ Drupal.behaviors.hrBlocks = {
   }
 }
 
-Drupal.behaviors.hrTeam = {
+Drupal.behaviors.frontTeam = {
   attach: function(context, settings) {
-    var member = $('.block-wie-zijn-we-hr ul li.team-member');
+    var member = $('.block-wie-zijn-we ul li.team-member');
     member.hover(function() {
       var normal_path = $(this).find('img').attr('src');
       var hover_path = normal_path.replace('image_normal', 'image_hover').replace('normal.png', 'hover.png');
@@ -106,11 +106,49 @@ Drupal.behaviors.frontReferenties = {
 
 Drupal.behaviors.mainReferenties = {
   attach: function(context, settings) {
-    $('.block-main-referenties ul.referenties li.referentie').hover(function() {
+    $('.block-main-referenties .isotope-element').hover(function() {
       $(this).find('.show-more').fadeIn("slow");
     }, function() {
       $(this).find('.show-more').fadeOut("slow");    
     });
+  }
+}
+
+Drupal.behaviors.mainReferentiesFilter = {
+  attach: function(context, settings) {
+    // hide the non-existent references
+    $('#isotope-options li').each(function() {
+      var data = $(this).find('a').attr('data-option-value');
+      var selector = ".isotope-element" + data;
+      var numberOfChildren = $('#isotope-container').children(selector).length;
+      if (numberOfChildren == 0) {
+        $(this).hide();
+      }
+    });
+  
+    // if URL parameter available: show only these references
+    var searchString = window.location.search.substring(1),
+    data = "",
+    i, val, params = searchString.split("&");
+    for (i=0;i<params.length;i++) {
+      val = params[i].split("=");
+      if (val[0] == "show") {
+        var data = val[1];
+      }
+    }
+    if (data.length > 0) {
+	    var selector = "." + data;
+	    $('#isotope-container').isotope({filter: selector});
+	  }
+/*
+    $('#isotope-container .isotope-element').each(function() {
+      var dataCategory = $(this).attr('data-category');
+      if (dataCategory.indexOf(data) > 0) {
+        $(this).hide();
+      }
+    });
+*/
+  
   }
 }
 

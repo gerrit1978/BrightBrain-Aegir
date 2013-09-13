@@ -69,6 +69,7 @@ stylesheets[all][] = flexslider/flexslider.css
 
 scripts[] = js/jquery.easing.1.3.js
 scripts[] = flexslider/jquery.flexslider-min.js
+scripts[] = js/jquery.isotope.min.js
 scripts[] = js/script.js
 
 

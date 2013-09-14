@@ -34,9 +34,27 @@ function brightbrain_preprocess_maintenance_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-/* -- Delete this line if you want to use this function
+
 function brightbrain_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+
+  // add "hr" or "marketing" section to body classes
+  $current_path = request_path();
+  $path_array = explode('/', $current_path);
+
+  $current_section = "hr";
+  if (is_array($path_array)) {
+    $languages = array('nl', 'en', 'fr');
+    if (in_array($path_array[0], $languages) && isset($path_array[1])) {
+      $current_section = $path_array[1];
+    } else {
+      $current_section = $path_array[0];
+    }
+  }
+
+  $variables['classes_array'][] = 'main-section-' . $current_section;
+
+
+
 
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
@@ -57,6 +75,7 @@ function brightbrain_preprocess_page(&$variables, $hook) {
 
   // remove default page title
   $variables['title'] = "";
+  
 }
 // */
 
@@ -70,6 +89,8 @@ function brightbrain_preprocess_page(&$variables, $hook) {
  */
 
 function brightbrain_preprocess_node(&$variables, $hook) {
+
+  // header blocks for pages
   if ($variables['node']->type == 'page') {
   
     // if this page node has a visual + slogan, render a "block"
@@ -105,6 +126,7 @@ function brightbrain_preprocess_node(&$variables, $hook) {
 
   }
   
+  // prev next navigation and title for references
   if ($variables['node']->type == 'referentie') {
     
     // page title and "navigation"
@@ -146,10 +168,6 @@ function brightbrain_preprocess_node(&$variables, $hook) {
         }
       }
     }
-/*
-    print_r($tags_field);
-    exit();
-*/
 
     $variables['content']['referentie_tags'] = array(
       '#markup' => $tags,
@@ -158,9 +176,6 @@ function brightbrain_preprocess_node(&$variables, $hook) {
     );
     
   }
-  
-  
-  $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
   // brightbrain_preprocess_node_page() or brightbrain_preprocess_node_story().
@@ -268,7 +283,9 @@ function brightbrain_preprocess_field(&$variables) {
   }
 }
 
-
+/**
+ * Implements theme_menu_link
+ */
 function brightbrain_menu_link($variables) {
 
   $element = $variables['element'];

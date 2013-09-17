@@ -499,6 +499,9 @@ a {
 	    }
 	    p {
 	      margin: 0;
+	      &.margin {
+	        margin-bottom: 20px;
+	      }
 	    }
 	    ul {
 	      margin: 0;

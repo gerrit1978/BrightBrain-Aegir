@@ -4,9 +4,9 @@
 $options['db_type'] = 'mysql';
 $options['db_host'] = 'localhost';
 $options['db_port'] = '3306';
-$options['db_passwd'] = 'cUABXh6nER';
-$options['db_name'] = 'brightbrainhedge';
-$options['db_user'] = 'brightbrainhedge';
+$options['db_passwd'] = '5bQEkWEa5q';
+$options['db_name'] = 'brightbrainhed_0';
+$options['db_user'] = 'brightbrainhed_0';
 $options['packages'] = array (
   'platforms' => 
   array (

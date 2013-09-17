@@ -1993,31 +1993,35 @@ a:focus {
 #main .field-name-field-page-block .field-name-field-page-block-body p {
   margin: 0;
 }
-/* line 503, ../sass/styles.scss */
+/* line 502, ../sass/styles.scss */
+#main .field-name-field-page-block .field-name-field-page-block-body p.margin {
+  margin-bottom: 20px;
+}
+/* line 506, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body ul {
   margin: 0;
 }
-/* line 506, ../sass/styles.scss */
+/* line 509, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body .block-col6 {
   width: 23%;
   float: left;
   margin-right: 2%;
 }
-/* line 510, ../sass/styles.scss */
+/* line 513, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body .block-col6.last {
   margin-right: 0;
 }
-/* line 514, ../sass/styles.scss */
+/* line 517, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body .block-col8 {
   width: 32%;
   float: left;
   margin-right: 2%;
 }
-/* line 518, ../sass/styles.scss */
+/* line 521, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body .block-col8.last {
   margin-right: 0;
 }
-/* line 522, ../sass/styles.scss */
+/* line 525, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body .block-col12 {
   width: 48%;
   float: left;
@@ -2025,11 +2029,11 @@ a:focus {
   margin-bottom: 20px;
   font-size: 0.88889em;
 }
-/* line 527, ../sass/styles.scss */
+/* line 530, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body .block-col12.last {
   margin-right: 0;
 }
-/* line 533, ../sass/styles.scss */
+/* line 536, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body h1.small {
   font-size: 1.625em;
   border: none;
@@ -2037,7 +2041,7 @@ a:focus {
   margin: 0;
   margin-bottom: 20px;
 }
-/* line 541, ../sass/styles.scss */
+/* line 544, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body h2 {
   clear: both;
   color: #cacaca;
@@ -2048,28 +2052,28 @@ a:focus {
   font-family: Lato;
   font-weight: 700;
 }
-/* line 551, ../sass/styles.scss */
+/* line 554, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body h3 {
   margin-bottom: 5px;
   margin-top: 25px;
 }
-/* line 555, ../sass/styles.scss */
+/* line 558, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body p {
   margin-top: 0;
 }
-/* line 558, ../sass/styles.scss */
+/* line 561, ../sass/styles.scss */
 #main .field-name-field-page-block .field-name-field-page-block-body dl {
   margin: 5px 0;
 }
 
-/* line 567, ../sass/styles.scss */
+/* line 570, ../sass/styles.scss */
 #main .contact-block .border-left {
   font-size: 1.25em;
   line-height: 1.6;
   border-left: 8px solid #e06d38;
   padding-left: 20px;
 }
-/* line 574, ../sass/styles.scss */
+/* line 577, ../sass/styles.scss */
 #main .contact-block .contact p {
   background: url(../images/sprite.png) no-repeat;
   height: 60px;
@@ -2078,40 +2082,40 @@ a:focus {
   font-size: 1.375em;
   margin-bottom: 15px;
 }
-/* line 581, ../sass/styles.scss */
+/* line 584, ../sass/styles.scss */
 #main .contact-block .contact p.phone {
   background-position: 0 -245px;
 }
-/* line 584, ../sass/styles.scss */
+/* line 587, ../sass/styles.scss */
 #main .contact-block .contact p.email {
   background-position: 0 -312px;
 }
-/* line 591, ../sass/styles.scss */
+/* line 594, ../sass/styles.scss */
 #main .webform-client-form {
   background: #fafafa;
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: 60px;
 }
-/* line 596, ../sass/styles.scss */
+/* line 599, ../sass/styles.scss */
 #main .webform-client-form fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 600, ../sass/styles.scss */
+/* line 603, ../sass/styles.scss */
 #main .webform-client-form fieldset#webform-component-wrapper {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 605, ../sass/styles.scss */
+/* line 608, ../sass/styles.scss */
 #main .webform-client-form fieldset#webform-component-wrapper--wrapper-left {
   float: left;
   width: 40%;
   margin-right: 10%;
 }
-/* line 609, ../sass/styles.scss */
+/* line 612, ../sass/styles.scss */
 #main .webform-client-form fieldset#webform-component-wrapper--wrapper-left .form-text {
   width: 100%;
   border: 1px solid #cacaca;
@@ -2119,22 +2123,22 @@ a:focus {
   line-height: 30px;
   color: #7a7a7a;
 }
-/* line 616, ../sass/styles.scss */
+/* line 619, ../sass/styles.scss */
 #main .webform-client-form fieldset#webform-component-wrapper--wrapper-left .form-textarea {
   width: 100%;
   border: 1px solid #cacaca;
   color: #7a7a7a;
 }
-/* line 622, ../sass/styles.scss */
+/* line 625, ../sass/styles.scss */
 #main .webform-client-form fieldset#webform-component-wrapper--wrapper-right {
   float: left;
   width: 50%;
 }
-/* line 625, ../sass/styles.scss */
+/* line 628, ../sass/styles.scss */
 #main .webform-client-form fieldset#webform-component-wrapper--wrapper-right iframe {
   border: 4px solid white;
 }
-/* line 630, ../sass/styles.scss */
+/* line 633, ../sass/styles.scss */
 #main .webform-client-form #edit-actions {
   max-width: 960px;
   margin-left: auto;
@@ -2143,18 +2147,18 @@ a:focus {
   padding-bottom: 150px;
 }
 
-/* line 642, ../sass/styles.scss */
+/* line 645, ../sass/styles.scss */
 #main .block-main-referenties #isotope-options {
   background: none;
   margin-bottom: 40px;
 }
-/* line 645, ../sass/styles.scss */
+/* line 648, ../sass/styles.scss */
 #main .block-main-referenties #isotope-options ul {
   margin: 0;
   padding: 0;
   background: none;
 }
-/* line 649, ../sass/styles.scss */
+/* line 652, ../sass/styles.scss */
 #main .block-main-referenties #isotope-options ul li {
   margin: 0;
   padding: 0;
@@ -2165,15 +2169,15 @@ a:focus {
   padding: 5px 10px;
   background: #e06d38;
 }
-/* line 658, ../sass/styles.scss */
+/* line 661, ../sass/styles.scss */
 #main .block-main-referenties #isotope-options ul li a {
   color: white;
 }
-/* line 665, ../sass/styles.scss */
+/* line 668, ../sass/styles.scss */
 #main .block-main-referenties #isotope-container {
   margin-left: 10px;
 }
-/* line 668, ../sass/styles.scss */
+/* line 671, ../sass/styles.scss */
 #main .block-main-referenties .isotope-element {
   width: 300px;
   height: 350px;
@@ -2185,24 +2189,24 @@ a:focus {
   background: white;
   position: relative;
 }
-/* line 678, ../sass/styles.scss */
+/* line 681, ../sass/styles.scss */
 #main .block-main-referenties .isotope-element img {
   width: 300px;
   height: auto;
 }
-/* line 682, ../sass/styles.scss */
+/* line 685, ../sass/styles.scss */
 #main .block-main-referenties .isotope-element a {
   color: #3a3a3a !important;
 }
-/* line 685, ../sass/styles.scss */
+/* line 688, ../sass/styles.scss */
 #main .block-main-referenties .isotope-element .visual {
   margin-bottom: 10px;
 }
-/* line 688, ../sass/styles.scss */
+/* line 691, ../sass/styles.scss */
 #main .block-main-referenties .isotope-element .title {
   font-size: 1.375em;
 }
-/* line 691, ../sass/styles.scss */
+/* line 694, ../sass/styles.scss */
 #main .block-main-referenties .isotope-element .show-more {
   display: none;
   position: absolute;
@@ -2216,7 +2220,7 @@ a:focus {
   line-height: 80px;
   text-transform: uppercase;
 }
-/* line 702, ../sass/styles.scss */
+/* line 705, ../sass/styles.scss */
 #main .block-main-referenties .isotope-element .show-more a {
   font-family: "Lato";
   font-weight: 300;
@@ -2225,18 +2229,18 @@ a:focus {
   height: 81px;
 }
 
-/* line 717, ../sass/styles.scss */
+/* line 720, ../sass/styles.scss */
 #main article.node-referentie {
   margin-top: 100px;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 722, ../sass/styles.scss */
+/* line 725, ../sass/styles.scss */
 #main article.node-referentie .referentie-top {
   margin-bottom: 40px;
 }
-/* line 724, ../sass/styles.scss */
+/* line 727, ../sass/styles.scss */
 #main article.node-referentie .referentie-top .referentie-title {
   font-family: Lato;
   font-size: 2em;
@@ -2245,44 +2249,44 @@ a:focus {
   float: left;
   width: 80%;
 }
-/* line 732, ../sass/styles.scss */
+/* line 735, ../sass/styles.scss */
 #main article.node-referentie .referentie-top .item-list {
   float: left;
   width: 20%;
 }
-/* line 735, ../sass/styles.scss */
+/* line 738, ../sass/styles.scss */
 #main article.node-referentie .referentie-top .item-list ul {
   float: right;
   margin: 0;
   padding: 0;
 }
-/* line 739, ../sass/styles.scss */
+/* line 742, ../sass/styles.scss */
 #main article.node-referentie .referentie-top .item-list ul li {
   list-style: none;
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 748, ../sass/styles.scss */
+/* line 751, ../sass/styles.scss */
 #main article.node-referentie .referentie-tags {
   margin-bottom: 20px;
   margin-left: -20px;
   font-size: 1.25em;
   color: #cacaca;
 }
-/* line 753, ../sass/styles.scss */
+/* line 756, ../sass/styles.scss */
 #main article.node-referentie .referentie-tags span.tag {
   padding: 0 20px;
   text-transform: uppercase;
 }
-/* line 758, ../sass/styles.scss */
+/* line 761, ../sass/styles.scss */
 #main article.node-referentie .field-name-body {
   font-size: 1.5em;
   line-height: 1.4;
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 764, ../sass/styles.scss */
+/* line 767, ../sass/styles.scss */
 #main article.node-referentie .field-name-field-referentie-visual-detail {
   padding: 10px;
   border: 1px solid #cacaca;
@@ -2293,7 +2297,7 @@ a:focus {
  * Footer
  * Sticky footer: see http://www.cssstickyfooter.com/
  */
-/* line 777, ../sass/styles.scss */
+/* line 780, ../sass/styles.scss */
 * {
   margin: 0;
   padding: 0;
@@ -2302,23 +2306,23 @@ a:focus {
 /* must declare 0 margins on everything, also for main layout components use padding, not 
 vertical margins (top and bottom) to add spacing, else those margins get added to total height 
 and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
-/* line 786, ../sass/styles.scss */
+/* line 789, ../sass/styles.scss */
 html, body {
   height: 100%;
 }
 
-/* line 790, ../sass/styles.scss */
+/* line 793, ../sass/styles.scss */
 #page-wrapper {
   min-height: 100%;
 }
 
-/* line 794, ../sass/styles.scss */
+/* line 797, ../sass/styles.scss */
 #page-wrapper-inner {
   overflow: auto;
   padding-bottom: 180px;
 }
 
-/* line 799, ../sass/styles.scss */
+/* line 802, ../sass/styles.scss */
 #footer {
   position: relative;
   margin-top: -180px;
@@ -2329,34 +2333,34 @@ html, body {
   color: #cacaca;
   font-size: 0.875em;
 }
-/* line 807, ../sass/styles.scss */
+/* line 810, ../sass/styles.scss */
 #footer a {
   color: #cacaca;
 }
-/* line 809, ../sass/styles.scss */
+/* line 812, ../sass/styles.scss */
 #footer a:hover {
   color: #ffffff;
 }
-/* line 815, ../sass/styles.scss */
+/* line 818, ../sass/styles.scss */
 #footer .contact div {
   background: url(../images/sprite.png) no-repeat;
   padding-left: 70px;
   height: 35px;
   line-height: 35px;
 }
-/* line 821, ../sass/styles.scss */
+/* line 824, ../sass/styles.scss */
 #footer .contact .address {
   background-position: 0 -140px;
 }
-/* line 824, ../sass/styles.scss */
+/* line 827, ../sass/styles.scss */
 #footer .contact .phone {
   background-position: 0 -175px;
 }
-/* line 827, ../sass/styles.scss */
+/* line 830, ../sass/styles.scss */
 #footer .contact .email {
   background-position: 0 -210px;
 }
-/* line 835, ../sass/styles.scss */
+/* line 838, ../sass/styles.scss */
 #footer .sm a {
   display: inline-block;
   background: url(../images/sprite.png) no-repeat;
@@ -2364,33 +2368,33 @@ html, body {
   height: 68px;
   text-indent: -999em;
 }
-/* line 842, ../sass/styles.scss */
+/* line 845, ../sass/styles.scss */
 #footer .sm a.linkedin {
   background-position: 0px 0px;
 }
-/* line 845, ../sass/styles.scss */
+/* line 848, ../sass/styles.scss */
 #footer .sm a.linkedin:hover {
   background-position: 0px -69px;
 }
-/* line 848, ../sass/styles.scss */
+/* line 851, ../sass/styles.scss */
 #footer .sm a.twitter {
   background-position: -71px 0;
 }
-/* line 851, ../sass/styles.scss */
+/* line 854, ../sass/styles.scss */
 #footer .sm a.twitter:hover {
   background-position: -71px -69px;
 }
-/* line 854, ../sass/styles.scss */
+/* line 857, ../sass/styles.scss */
 #footer .sm a.facebook {
   background-position: -142px 0;
 }
-/* line 857, ../sass/styles.scss */
+/* line 860, ../sass/styles.scss */
 #footer .sm a.facebook:hover {
   background-position: -142px -69px;
 }
 
 /*Opera Fix*/
-/* line 865, ../sass/styles.scss */
+/* line 868, ../sass/styles.scss */
 body:before {
   /* thanks to Maleika (Kohoutec)*/
   content: "";
@@ -2412,7 +2416,7 @@ You also need to include this conditional style in the <head> of your HTML file 
 <![endif]-->
 */
 /* To Top */
-/* line 885, ../sass/styles.scss */
+/* line 888, ../sass/styles.scss */
 a#to-top {
   position: fixed;
   right: 10px;
@@ -2424,7 +2428,7 @@ a#to-top {
   text-indent: -999em;
   display: none;
 }
-/* line 895, ../sass/styles.scss */
+/* line 898, ../sass/styles.scss */
 a#to-top:focus {
   outline: none;
 }
